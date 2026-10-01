@@ -1,3 +1,9 @@
 /xtui
 *.out
 *.test
+
+# Local credentials. Never commit these.
+config.json
+*.env
+.env
+.env.*

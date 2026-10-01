@@ -84,7 +84,7 @@ The config file is `xtui/config.json` inside the OS config directory, mode `0600
 
 `XTUI_CONFIG_DIR` replaces that directory. These variables override the file when they are set: `XTUI_CLIENT_ID`, `XTUI_CLIENT_SECRET`, `XTUI_ACCESS_TOKEN`, `XTUI_REFRESH_TOKEN`.
 
-The file holds the client id, the optional secret, the access token, the refresh token, and the expiry. Sign-out clears the tokens and leaves the app credentials.
+The file holds the client id, the optional secret, the access token, the refresh token, and the expiry. It stays on your machine, outside this repository, with mode `0600`. `config.json` and `.env` files are gitignored so a later commit does not pick them up. Sign-out clears the tokens and leaves the app credentials.
 
 ## The screen
 
