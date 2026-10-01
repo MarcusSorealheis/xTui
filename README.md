@@ -192,6 +192,8 @@ The module path is `github.com/MarcusSorealheis/xTui`. UI code uses Bubble Tea, 
 go test ./...
 ```
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the development setup, the ignore rules, and what a change should include.
+
 Config tests use a temporary directory. API tests use `httptest` and the in-memory demo. UI tests drive keystrokes and check the rendered frame, including line width at 80, 100, 120, and 160 columns. No test calls X.
 
 ## License

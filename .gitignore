@@ -6,6 +6,7 @@
 !go.mod
 !go.sum
 !README.md
+!CONTRIBUTING.md
 !LICENSE
 !.gitignore
 
