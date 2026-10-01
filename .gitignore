@@ -1,9 +1,43 @@
-/xtui
-*.out
-*.test
+# Allow only source, module files, docs, and the license.
+# A new file of any other name is ignored until this list is changed.
+*
+!*/
+!*.go
+!go.mod
+!go.sum
+!*.md
+!LICENSE
+!.gitignore
 
-# Local credentials. Never commit these.
+# These stay ignored even if a rule above would include them.
+# A later ! rule in this file would undo that, so keep this block last.
 config.json
+credentials.json
+secrets.json
+token.json
+tokens.json
+auth.json
 *.env
 .env
 .env.*
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+id_rsa
+id_rsa.*
+id_dsa
+id_dsa.*
+id_ecdsa
+id_ecdsa.*
+id_ed25519
+id_ed25519.*
+*.kubeconfig
+.netrc
+.npmrc
+.pypirc
