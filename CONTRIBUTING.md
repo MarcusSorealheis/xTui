@@ -31,7 +31,7 @@ The module path is `github.com/MarcusSorealheis/xTui`. Run `gofmt` on Go files y
 
 Do not put a client id, client secret, access token, refresh token, or a copy of `config.json` in a commit, a test, a fixture, or an issue.
 
-The repository ignores every file except Go source, `go.mod`, `go.sum`, `README.md`, `CONTRIBUTING.md`, and `LICENSE`. JSON, YAML, env files, private keys, and credential names are ignored again at the bottom of `.gitignore`. To track a new kind of file, add a `!` rule in the allowlist at the top of `.gitignore`, above that credential block. Check it with:
+The repository ignores every file except Go source, `go.mod`, `go.sum`, `README.md`, `CONTRIBUTING.md`, `LICENSE`, and the demo files `xTui-demo.gif` and `xTui-demo.mov`. JSON, YAML, env files, private keys, and credential names are ignored again at the bottom of `.gitignore`. To track a new kind of file, add a `!` rule in the allowlist at the top of `.gitignore`, above that credential block. Check it with:
 
 ```bash
 git check-ignore -v --no-index path/to/the-file

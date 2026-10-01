@@ -9,6 +9,8 @@
 !CONTRIBUTING.md
 !LICENSE
 !.gitignore
+!xTui-demo.gif
+!xTui-demo.mov
 
 # Keep this block last. A rule here beats an allow rule above.
 # Adding !*.json higher in the file does not re-include these names.

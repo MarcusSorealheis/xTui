@@ -4,6 +4,10 @@ xTui is a terminal client for the signed-in X home timeline. It talks to the off
 
 The source is [Apache 2.0](LICENSE) and lives at [github.com/MarcusSorealheis/xTui](https://github.com/MarcusSorealheis/xTui).
 
+![xTui demo](xTui-demo.gif)
+
+The same recording is [xTui-demo.mov](xTui-demo.mov).
+
 The screen is three panes when the terminal is wide enough: feeds on the left, the timeline in the middle, and the open post with its action menu on the right. A two-line key menu stays pinned to the bottom. Colors follow the terminal's light or dark appearance.
 
 A terminal at least 100 columns wide shows all three panes. From 92 columns the detail pane remains and the feed list drops. Narrower windows keep the timeline and the key menu. Below 40×10 the app asks you to resize.
