@@ -84,7 +84,7 @@ The config file is `xtui/config.json` inside the OS config directory, mode `0600
 
 `XTUI_CONFIG_DIR` replaces that directory. These variables override the file when they are set: `XTUI_CLIENT_ID`, `XTUI_CLIENT_SECRET`, `XTUI_ACCESS_TOKEN`, `XTUI_REFRESH_TOKEN`.
 
-The file holds the client id, the optional secret, the access token, the refresh token, and the expiry. It stays on your machine, outside this repository, with mode `0600`. The repository ignores every file except Go source, `go.mod`, `go.sum`, Markdown, and the license. Credential names such as `config.json`, `.env`, and private keys are ignored again at the bottom of `.gitignore`, so they stay out even if the allowlist grows. Sign-out clears the tokens and leaves the app credentials.
+The file holds the client id, the optional secret, the access token, the refresh token, and the expiry. It stays on your machine, outside this repository, with mode `0600`. The repository ignores every file except Go source, `go.mod`, `go.sum`, `README.md`, and the license. JSON, YAML, env files, private keys, and the usual credential names are ignored again at the bottom of `.gitignore`, so they stay out even if the allowlist grows. Sign-out clears the tokens and leaves the app credentials.
 
 ## The screen
 

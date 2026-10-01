@@ -1,22 +1,23 @@
-# Allow only source, module files, docs, and the license.
-# A new file of any other name is ignored until this list is changed.
+# Allow only Go source, the module files, README.md, and the license.
+# Every other filename is ignored until a rule here says otherwise.
 *
 !*/
 !*.go
 !go.mod
 !go.sum
-!*.md
+!README.md
 !LICENSE
 !.gitignore
 
-# These stay ignored even if a rule above would include them.
-# A later ! rule in this file would undo that, so keep this block last.
-config.json
-credentials.json
-secrets.json
-token.json
-tokens.json
-auth.json
+# Keep this block last. A rule here beats an allow rule above.
+# Adding !*.json higher in the file does not re-include these names.
+*.json
+*.yaml
+*.yml
+*.toml
+*.ini
+*.cfg
+*.conf
 *.env
 .env
 .env.*
@@ -29,6 +30,17 @@ auth.json
 *.cer
 *.jks
 *.keystore
+*.kdbx
+*.age
+*.ovpn
+*.tfvars
+*.tfstate
+*.sqlite
+*.db
+*.log
+*.bak
+*.orig
+*.swp
 id_rsa
 id_rsa.*
 id_dsa
@@ -41,3 +53,14 @@ id_ed25519.*
 .netrc
 .npmrc
 .pypirc
+.htpasswd
+config.json
+credentials.json
+credentials.*
+secrets.json
+secrets.*
+token.json
+tokens.json
+auth.json
+service-account*.json
+.DS_Store
